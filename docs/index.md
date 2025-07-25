@@ -108,6 +108,6 @@ rm -f ~/.gh-accounts
 
 ## Maintainer
 
-Maintained by **[vishnutvm](https://github.com/vishnutvm)**
+Maintained by **[Vishnu](https://github.com/vishnutvm)**
 
 ---
