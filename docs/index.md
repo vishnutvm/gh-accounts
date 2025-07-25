@@ -1,79 +1,87 @@
-# gh-accounts – GitHub Multi-Account Manager
+# gh-accounts
+## GitHub Multi-Account Manager
 
-`gh-accounts` is a CLI tool that simplifies managing multiple GitHub accounts on a single machine. It automates SSH key creation, Git configuration, and repository account switching.
-
----
-
-## **Features**
-- Manage multiple GitHub accounts easily.
-- Auto-generate SSH keys and configure `~/.ssh/config`.
-- Converts HTTPS remotes to SSH automatically.
-- Interactive account switching (via `fzf`).
-- Live SSH key verification after adding accounts.
-- Self-installing with `gh-accounts install`.
+**gh-accounts** is a powerful CLI tool that simplifies managing multiple GitHub accounts on a single machine. Automate SSH key creation, Git configuration, and seamlessly switch between accounts across repositories.
 
 ---
 
-## **Quick Installation**
+## Features
+
+- **Multi-Account Management** - Handle multiple GitHub accounts effortlessly
+- **Automated SSH Setup** - Auto-generate SSH keys and configure `~/.ssh/config`
+- **Smart Remote Conversion** - Automatically converts HTTPS remotes to SSH
+- **Interactive Switching** - Account switching with `fzf` integration
+- **Live Verification** - SSH key verification after adding accounts
+- **Self-Installing** - Easy global installation with `gh-accounts install`
+
+---
+
+## Quick Installation
+
 ```bash
 curl -fsSL https://gist.githubusercontent.com/vishnutvm/f876e9c294dff5f1efe1431e85e49ad9/raw -o gh-accounts.sh
 bash gh-accounts.sh install
 ```
-Once installed, you can run `gh-accounts` globally.
+
+Once installed, run `gh-accounts` from anywhere in your terminal.
 
 ---
 
-## **Download and Install a Specific Version**
-To download and install a specific version (for example, **v1.0.0**) of `gh-accounts`, follow these steps:
+## Install Specific Version
 
-1. **Go to the Release Page**  
-   Check your desired version on the GitHub Releases page and confirm the version number you want (e.g., **v1.0.0**).
+### Step 1: Check Available Versions
+Visit the [Releases Page](https://github.com/vishnutvm/gh-accounts/releases) to find your desired version.
 
-2. **Download and Install That Version**  
-   Run the following commands in your terminal:
-   ```bash
-   curl -fsSL https://github.com/vishnutvm/gh-accounts/releases/download/v1.0.0/gh-accounts.sh -o gh-accounts.sh
-   bash gh-accounts.sh install
-   ```
-   - The `curl` command fetches exactly the **v1.0.0** script, not the main branch or latest changes.
-   - The `install` command will set up `gh-accounts` globally on your machine.
+### Step 2: Download & Install
+```bash
+# Replace v1.0.0 with your desired version
+curl -fsSL https://github.com/vishnutvm/gh-accounts/releases/download/v1.0.0/gh-accounts.sh -o gh-accounts.sh
+bash gh-accounts.sh install
+```
 
 ---
 
-## **Basic Commands**
+## Commands
 
-### **Add a New Account**
+### Add New Account
 ```bash
 gh-accounts add <alias> <github-username> <email>
 ```
-Example:
+**Example:**
 ```bash
 gh-accounts add personal johndoe johndoe@example.com
+gh-accounts add work jane.smith jane@company.com
 ```
 
-### **List Accounts**
+### List All Accounts
 ```bash
 gh-accounts list
 ```
 
-### **Switch Repository Account**
+### Switch Repository Account
 ```bash
 gh-accounts switch <alias>
 ```
 
-### **Interactive Switch**
+### Interactive Account Selection
 ```bash
 gh-accounts interactive
 ```
 
-### **Show Current Repo Info**
+### View Current Repository Info
 ```bash
 gh-accounts current
 ```
 
+### Verify All SSH Keys
+```bash
+gh-accounts verify-all
+```
+
 ---
 
-## **Uninstallation**
+## Uninstallation
+
 ```bash
 sudo rm -f /usr/local/bin/gh-accounts
 rm -f ~/.gh-accounts
@@ -81,12 +89,25 @@ rm -f ~/.gh-accounts
 
 ---
 
-## **Tips**
-- Use descriptive aliases like `personal`, `work`, `projects`.
-- Add SSH keys to GitHub via **Settings → SSH and GPG keys → New SSH key**.
-- Run `gh-accounts verify-all` to confirm all keys are active.
+## Tips
+
+- Use **descriptive aliases** like `personal`, `work`, `opensource`
+- Add generated SSH keys to GitHub: **Settings → SSH and GPG keys → New SSH key**
+- Run `gh-accounts verify-all` after setup to ensure all keys are working
+- The tool automatically handles SSH config management - no manual editing needed
 
 ---
 
-## **About**
-This page is auto-generated from the main README. Visit the [GitHub repository](https://github.com/vishnutvm/gh-accounts) for updates.
+## Links
+
+- **[GitHub Repository](https://github.com/vishnutvm/gh-accounts)**
+- **[Latest Release](https://github.com/vishnutvm/gh-accounts/releases/latest)**
+- **[Report Issues](https://github.com/vishnutvm/gh-accounts/issues)**
+
+---
+
+## Maintainer
+
+Maintained by **[vishnutvm](https://github.com/vishnutvm)**
+
+---
