@@ -5,14 +5,14 @@
 
 ---
 
-## Features
+## **Features**
+- Manage multiple GitHub accounts easily.
+- Auto-generate SSH keys and configure `~/.ssh/config`.
+- Converts HTTPS remotes to SSH automatically.
+- Interactive account switching (via `fzf`).
+- Live SSH key verification after adding accounts.
+- Self-installing with `gh-accounts install`.
 
-- **Multi-Account Management** - Handle multiple GitHub accounts effortlessly
-- **Automated SSH Setup** - Auto-generate SSH keys and configure `~/.ssh/config`
-- **Smart Remote Conversion** - Automatically converts HTTPS remotes to SSH
-- **Interactive Switching** - Account switching with `fzf` integration
-- **Live Verification** - SSH key verification after adding accounts
-- **Self-Installing** - Easy global installation with `gh-accounts install`
 
 ---
 
