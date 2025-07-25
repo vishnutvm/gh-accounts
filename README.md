@@ -14,32 +14,15 @@
 
 ---
 
-
 ## **Installation**
 
 ### **Quick Installation**
+Use the raw GitHub URL to download and install directly:
 ```bash
-curl -fsSL https://gist.githubusercontent.com/vishnutvm/f876e9c294dff5f1efe1431e85e49ad9/raw -o gh-accounts.sh
+curl -fsSL https://raw.githubusercontent.com/vishnutvm/gh-accounts/main/gh-accounts.sh -o gh-accounts.sh
 bash gh-accounts.sh install
 ```
 Once installed, you can run `gh-accounts` globally.
-
-### **Download and Install a Specific Version**
-To download and install a specific version (for example, **v1.0.0**) of `gh-accounts`, follow these steps:
-
-1. **Go to the Release Page**  
-   Check your desired version on the GitHub Releases page and confirm the version number you want (e.g., **v1.0.0**).
-
-2. **Download and Install That Version**  
-   Run the following commands in your terminal:
-   ```bash
-   curl -fsSL https://github.com/vishnutvm/gh-accounts/releases/download/v1.0.0/gh-accounts.sh -o gh-accounts.sh
-   bash gh-accounts.sh install
-   ```
-   - The `curl` command fetches exactly the **v1.0.0** script, not the main branch or latest changes.
-   - The `install` command will set up `gh-accounts` globally on your machine.
-
----
 
 ## **Usage**
 
